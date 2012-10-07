@@ -10,13 +10,13 @@
   <copyright>Willow Garage</copyright>
   <url>http://ros.org/wiki/random_numbers</url>
 
-  <build_depends>catkin</build_depends>
-  <build_depends>rosconsole</build_depends>
-  <build_depends>console_bridge</build_depends>
+  <build_depend>catkin</build_depend>
+  <build_depend>rosconsole</build_depend>
+  <build_depend>console_bridge</build_depend>
 
-  <run_depends>catkin</run_depends>
-  <run_depends>console_bridge</run_depends>
-  <run_depends>rosconsole</run_depends>
+  <run_depend>catkin</run_depend>
+  <run_depend>console_bridge</run_depend>
+  <run_depend>rosconsole</run_depend>
 
   <export>
   </export>
