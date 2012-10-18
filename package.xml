@@ -1,24 +1,18 @@
 <package>
   <name>rosconsole_bridge</name>
-  <version>0.2.3</version>
-  <description brief="Bridging output from console-bridge to rosconsole">This package offers a macro definition that makes it such that the output from console-bridge is sent to rosconsole</description>
+  <version>0.2.4</version>
+  <description>This package offers a macro definition that makes it such that the output from console-bridge is sent to rosconsole</description>
   <author email="isucan@willowgarage.edu">Ioan Sucan</author>
   <maintainer email="isucan@willowgarage.com">Ioan Sucan</maintainer>
 
   <license>BSD</license>  
-  <review status="unreviewed" notes=""/>
-  <copyright>Willow Garage</copyright>
-  <url>http://ros.org/wiki/random_numbers</url>
+  <url>http://ros.org/wiki/console_bridge</url>
 
   <build_depend>catkin</build_depend>
   <build_depend>rosconsole</build_depend>
   <build_depend>console_bridge</build_depend>
 
-  <run_depend>catkin</run_depend>
-  <run_depend>console_bridge</run_depend>
   <run_depend>rosconsole</run_depend>
-
-  <export>
-  </export>
+  <run_depend>console_bridge</run_depend>
 
 </package>
