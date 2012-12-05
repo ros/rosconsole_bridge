@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(rosconsole_bridge)
 
-find_package(catkin COMPONENTS rosconsole console_bridge REQUIRED)
+find_package(catkin REQUIRED COMPONENTS console_bridge rosconsole)
 
 include_directories(include ${catkin_INCLUDE_DIRS})
 link_directories(${catkin_LIBRARY_DIRS})

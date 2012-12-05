@@ -1,6 +1,6 @@
 <package>
   <name>rosconsole_bridge</name>
-  <version>0.2.4</version>
+  <version>0.2.5</version>
   <description>This package offers a macro definition that makes it such that the output from console-bridge is sent to rosconsole</description>
   <author email="isucan@willowgarage.edu">Ioan Sucan</author>
   <maintainer email="isucan@willowgarage.com">Ioan Sucan</maintainer>
