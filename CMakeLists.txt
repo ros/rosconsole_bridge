@@ -7,8 +7,8 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 link_directories(${catkin_LIBRARY_DIRS})
 
 catkin_package(
-  LIBRARIES ${PROJECT_NAME}
   INCLUDE_DIRS include
+  LIBRARIES ${PROJECT_NAME}
   CATKIN_DEPENDS console_bridge rosconsole
 )
 
