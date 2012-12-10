@@ -93,6 +93,9 @@ RegisterOutputHandlerProxy::RegisterOutputHandlerProxy(void)
 {
   static OutputHandlerROS oh_ros;
   console_bridge::useOutputHandler(&oh_ros);
+
+  // we want the output level to be decided by rosconsole, so we bring all messages to rosconsole
+  console_bridge::setLogLevel(console_bridge::LOG_DEBUG);
 }
 
 }
