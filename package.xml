@@ -1,12 +1,15 @@
 <package>
   <name>rosconsole_bridge</name>
   <version>0.2.6</version>
-  <description>This package offers a macro definition that makes it such that the output from console-bridge is sent to rosconsole</description>
-  <author email="isucan@willowgarage.edu">Ioan Sucan</author>
+  <description>rosconsole_bridge is a package used in conjunction with console_bridge and rosconsole for connecting console_bridge-based logging to rosconsole-based logging.</description>
   <maintainer email="isucan@willowgarage.com">Ioan Sucan</maintainer>
+  <maintainer email="mshah@willowgarage.com">Mirza Shah</maintainer>
+  <license>BSD</license>
 
-  <license>BSD</license>  
-  <url>http://ros.org/wiki/console_bridge</url>
+  <url type="website">http://www.ros.org/wiki/rosconsole_bridge</url>
+  <url type="bugtracker">https://github.com/ros/rosconsole_bridge/issues</url>
+  <url type="repository">https://github.com/ros/rosconsole_bridge</url>
+  <author email="isucan@willowgarage.edu">Ioan Sucan</author>
 
   <build_depend>catkin</build_depend>
   <build_depend>rosconsole</build_depend>
