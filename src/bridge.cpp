@@ -49,7 +49,7 @@ void OutputHandlerROS::log(const std::string &text, console_bridge::LogLevel lev
 {
   switch (level)
   {
-  case console_bridge::LOG_INFO: 
+  case console_bridge::CONSOLE_BRIDGE_LOG_INFO: 
     {
       ROSCONSOLE_DEFINE_LOCATION(true, ::ros::console::levels::Info, std::string(ROSCONSOLE_NAME_PREFIX) + ".console_bridge");
       if (ROS_UNLIKELY(enabled))
@@ -58,7 +58,7 @@ void OutputHandlerROS::log(const std::string &text, console_bridge::LogLevel lev
       }    
     }
     break;
-  case console_bridge::LOG_WARN:
+  case console_bridge::CONSOLE_BRIDGE_LOG_WARN:
     {
       ROSCONSOLE_DEFINE_LOCATION(true, ::ros::console::levels::Warn, std::string(ROSCONSOLE_NAME_PREFIX) + ".console_bridge");
       if (ROS_UNLIKELY(enabled))
@@ -67,7 +67,7 @@ void OutputHandlerROS::log(const std::string &text, console_bridge::LogLevel lev
       }    
     }
     break;
-  case console_bridge::LOG_ERROR:
+  case console_bridge::CONSOLE_BRIDGE_LOG_ERROR:
     {
       ROSCONSOLE_DEFINE_LOCATION(true, ::ros::console::levels::Error, std::string(ROSCONSOLE_NAME_PREFIX) + ".console_bridge");
       if (ROS_UNLIKELY(enabled))
@@ -95,7 +95,7 @@ RegisterOutputHandlerProxy::RegisterOutputHandlerProxy(void)
   console_bridge::useOutputHandler(&oh_ros);
 
   // we want the output level to be decided by rosconsole, so we bring all messages to rosconsole
-  console_bridge::setLogLevel(console_bridge::LOG_DEBUG);
+  console_bridge::setLogLevel(console_bridge::CONSOLE_BRIDGE_LOG_DEBUG);
 }
 
 }
