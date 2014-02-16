@@ -2,8 +2,8 @@
 Changelog for package rosconsole_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.4 (2014-02-15)
+------------------
 * Allows non-ros components to utilize the prefix functionality of log4j
 * Contributors: Dave Coleman, Ioan A Sucan
 
