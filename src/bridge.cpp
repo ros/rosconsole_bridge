@@ -76,9 +76,9 @@ void OutputHandlerROS::log(const std::string &text, console_bridge::LogLevel lev
   case console_bridge::CONSOLE_BRIDGE_LOG_INFO:
     {
       ROSCONSOLE_DEFINE_LOCATION(true, ::ros::console::levels::Info, prefix);
-      if (ROS_UNLIKELY(enabled))
+      if (ROS_UNLIKELY(__rosconsole_define_location__enabled))
       {
-        ::ros::console::print(NULL, loc.logger_, loc.level_, filename, line, "", "%s",
+        ::ros::console::print(NULL, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, filename, line, "", "%s",
           text.substr(sub_index, std::string::npos).c_str());
       }
     }
@@ -86,9 +86,9 @@ void OutputHandlerROS::log(const std::string &text, console_bridge::LogLevel lev
   case console_bridge::CONSOLE_BRIDGE_LOG_WARN:
     {
       ROSCONSOLE_DEFINE_LOCATION(true, ::ros::console::levels::Warn, prefix);
-      if (ROS_UNLIKELY(enabled))
+      if (ROS_UNLIKELY(__rosconsole_define_location__enabled))
       {
-        ::ros::console::print(NULL, loc.logger_, loc.level_, filename, line, "", "%s",
+        ::ros::console::print(NULL, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, filename, line, "", "%s",
           text.substr(sub_index, std::string::npos).c_str());
       }
     }
@@ -96,9 +96,9 @@ void OutputHandlerROS::log(const std::string &text, console_bridge::LogLevel lev
   case console_bridge::CONSOLE_BRIDGE_LOG_ERROR:
     {
       ROSCONSOLE_DEFINE_LOCATION(true, ::ros::console::levels::Error, prefix);
-      if (ROS_UNLIKELY(enabled))
+      if (ROS_UNLIKELY(__rosconsole_define_location__enabled))
       {
-        ::ros::console::print(NULL, loc.logger_, loc.level_, filename, line, "", "%s",
+        ::ros::console::print(NULL, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, filename, line, "", "%s",
           text.substr(sub_index, std::string::npos).c_str());
       }
     }
@@ -107,9 +107,9 @@ void OutputHandlerROS::log(const std::string &text, console_bridge::LogLevel lev
     // debug
     {
       ROSCONSOLE_DEFINE_LOCATION(true, ::ros::console::levels::Debug, prefix);
-      if (ROS_UNLIKELY(enabled))
+      if (ROS_UNLIKELY(__rosconsole_define_location__enabled))
       {
-        ::ros::console::print(NULL, loc.logger_, loc.level_, filename, line, "", "%s",
+        ::ros::console::print(NULL, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, filename, line, "", "%s",
           text.substr(sub_index, std::string::npos).c_str());
       }
     }
