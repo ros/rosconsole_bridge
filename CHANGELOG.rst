@@ -2,8 +2,8 @@
 Changelog for package rosconsole_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.4.1 (2014-06-25)
+------------------
 * update find_package for console bridge to reflect 3rdparty status (`#8 <https://github.com/ros/rosconsole_bridge/issues/8>`_)
 
 0.4.0 (2014-06-24)
