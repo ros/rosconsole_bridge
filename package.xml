@@ -2,9 +2,9 @@
   <name>rosconsole_bridge</name>
   <version>0.3.4</version>
   <description>rosconsole_bridge is a package used in conjunction with console_bridge and rosconsole for connecting console_bridge-based logging to rosconsole-based logging.</description>
-  
+
   <author email="isucan@willowgarage.com">Ioan Sucan</author>
-  
+
   <maintainer email="mshah@willowgarage.com">Mirza Shah</maintainer>
   <maintainer email="isucan@willowgarage.com">Ioan Sucan</maintainer>
   <license>BSD</license>
@@ -12,12 +12,12 @@
   <url type="website">http://www.ros.org/wiki/rosconsole_bridge</url>
   <url type="bugtracker">https://github.com/ros/rosconsole_bridge/issues</url>
   <url type="repository">https://github.com/ros/rosconsole_bridge</url>
-  
-  <buildtool_depend>catkin</buildtool_depend>
-  <build_depend version_gte="1.11.5">rosconsole</build_depend>
-  <build_depend>console_bridge</build_depend>
 
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>libconsole-bridge-dev</build_depend>
+  <build_depend version_gte="1.11.5">rosconsole</build_depend>
+
+  <run_depend>libconsole-bridge-dev</run_depend>
   <run_depend>rosconsole</run_depend>
-  <run_depend>console_bridge</run_depend>
 
 </package>
