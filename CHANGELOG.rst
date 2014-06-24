@@ -2,6 +2,11 @@
 Changelog for package rosconsole_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* rename variables within rosconsole macros (`ros/ros_comm#442 <https://github.com/ros/ros_comm/issues/442>`_)
+* convert to use console bridge from upstream debian package (`ros/rosdistro#4633 <https://github.com/ros/rosdistro/issues/4633>`_)
+
 0.3.4 (2014-02-15)
 ------------------
 * Allows non-ros components to utilize the prefix functionality of log4j
