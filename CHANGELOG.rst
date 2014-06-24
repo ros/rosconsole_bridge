@@ -2,8 +2,8 @@
 Changelog for package rosconsole_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.4.0 (2014-06-24)
+------------------
 * rename variables within rosconsole macros (`ros/ros_comm#442 <https://github.com/ros/ros_comm/issues/442>`_)
 * convert to use console bridge from upstream debian package (`ros/rosdistro#4633 <https://github.com/ros/rosdistro/issues/4633>`_)
 
