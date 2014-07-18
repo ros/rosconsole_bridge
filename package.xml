@@ -3,10 +3,10 @@
   <version>0.4.1</version>
   <description>rosconsole_bridge is a package used in conjunction with console_bridge and rosconsole for connecting console_bridge-based logging to rosconsole-based logging.</description>
 
-  <author email="isucan@willowgarage.com">Ioan Sucan</author>
+  <author>Ioan Sucan</author>
 
-  <maintainer email="mshah@willowgarage.com">Mirza Shah</maintainer>
-  <maintainer email="isucan@willowgarage.com">Ioan Sucan</maintainer>
+  <maintainer email="dthomas@osrfoundation.org">Dirk Thomas</maintainer>
+  <maintainer email="isucan@gmail.com">Ioan Sucan</maintainer>
   <license>BSD</license>
 
   <url type="website">http://www.ros.org/wiki/rosconsole_bridge</url>
