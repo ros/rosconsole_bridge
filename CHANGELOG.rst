@@ -2,6 +2,10 @@
 Changelog for package rosconsole_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* use catkin variables for install dirs (`#9 <https://github.com/ros/rosconsole_bridge/issues/9>`_)
+
 0.4.2 (2014-07-18)
 ------------------
 * update maintainers
