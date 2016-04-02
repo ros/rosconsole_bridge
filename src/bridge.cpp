@@ -45,6 +45,10 @@ OutputHandlerROS::OutputHandlerROS(void) : OutputHandler()
 {
 }
 
+OutputHandlerROS::~OutputHandlerROS(void) {
+  console_bridge::restorePreviousOutputHandler();
+}
+
 void OutputHandlerROS::log(const std::string &text, console_bridge::LogLevel level, const char *filename, int line)
 {
   std::string prefix;
