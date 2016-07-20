@@ -16,7 +16,7 @@ catkin_package(
 
 add_library(${PROJECT_NAME} src/bridge.cpp)
 
-target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${console_bridge_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} ${console_bridge_LIBRARIES} ${catkin_LIBRARIES})
 
 install(
   TARGETS ${PROJECT_NAME}
