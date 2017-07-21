@@ -45,8 +45,7 @@ OutputHandlerROS::OutputHandlerROS(void) : OutputHandler()
 {
 }
 
-OutputHandlerROS::~OutputHandlerROS(void) {
-  console_bridge::restorePreviousOutputHandler();
+OutputHandlerROS::~OutputHandlerROS(void){
 }
 
 void OutputHandlerROS::log(const std::string &text, console_bridge::LogLevel level, const char *filename, int line)
@@ -121,13 +120,56 @@ void OutputHandlerROS::log(const std::string &text, console_bridge::LogLevel lev
   }
 }
 
+class OutputHandlerRosManager {
+public:
+  void activate() {
+    if(!is_activated_){
+      is_activated_ = true;
+      ROS_DEBUG("Activating the console_bridge ROS output handler.");
+      console_bridge::useOutputHandler(&oh_ros_);
+
+      // we want the output level to be decided by rosconsole, so we bring all messages to rosconsole
+      previous_log_level_ = console_bridge::getLogLevel();
+      console_bridge::setLogLevel(console_bridge::CONSOLE_BRIDGE_LOG_DEBUG);
+    }
+  }
+
+  void deactivate(){
+    if(is_activated_){
+      ROS_DEBUG("Deactivating the console_bridge ROS output handler.");
+      is_activated_ = false;
+      console_bridge::restorePreviousOutputHandler();
+      console_bridge::setLogLevel(previous_log_level_);
+    }
+  }
+
+  static OutputHandlerRosManager & getInstance() {
+    static OutputHandlerRosManager ohRosManager;
+    return ohRosManager;
+  }
+private:
+  OutputHandlerRosManager() : is_activated_(false), previous_log_level_(console_bridge::CONSOLE_BRIDGE_LOG_DEBUG) {
+  }
+  ~OutputHandlerRosManager() {
+    deactivate();
+  }
+
+  bool is_activated_;
+  console_bridge::LogLevel previous_log_level_;
+  OutputHandlerROS oh_ros_;
+};
+
+void activate() {
+  OutputHandlerRosManager::getInstance().activate();
+}
+
+void deactivate() {
+  OutputHandlerRosManager::getInstance().deactivate();
+}
+
 RegisterOutputHandlerProxy::RegisterOutputHandlerProxy(void)
 {
-  static OutputHandlerROS oh_ros;
-  console_bridge::useOutputHandler(&oh_ros);
-
-  // we want the output level to be decided by rosconsole, so we bring all messages to rosconsole
-  console_bridge::setLogLevel(console_bridge::CONSOLE_BRIDGE_LOG_DEBUG);
+  activate();
 }
 
 }
