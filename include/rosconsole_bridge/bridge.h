@@ -50,6 +50,9 @@ public:
   virtual void log(const std::string &text, console_bridge::LogLevel level, const char *filename, int line);
 };
 
+void activate();
+void deactivate();
+
 struct RegisterOutputHandlerProxy
 {
   RegisterOutputHandlerProxy(void);
