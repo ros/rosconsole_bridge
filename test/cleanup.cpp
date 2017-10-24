@@ -3,10 +3,10 @@
 
 struct A {
   A(const char* hint) {
-    logWarn("initializing class: %s", hint);
+    CONSOLE_BRIDGE_logWarn("initializing class: %s", hint);
   }
   ~A() {
-    logWarn("destroying class");
+    CONSOLE_BRIDGE_logWarn("destroying class");
   }
 };
 
