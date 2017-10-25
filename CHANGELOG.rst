@@ -2,6 +2,10 @@
 Changelog for package rosconsole_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* replace usage of deprecated logging functions (`#14 <https://github.com/ros/rosconsole_bridge/issues/14>`_)
+
 0.4.3 (2016-03-11)
 ------------------
 * use catkin variables for install dirs (`#9 <https://github.com/ros/rosconsole_bridge/issues/9>`_)
