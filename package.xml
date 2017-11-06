@@ -1,6 +1,6 @@
 <package>
   <name>rosconsole_bridge</name>
-  <version>0.5.0</version>
+  <version>0.5.1</version>
   <description>rosconsole_bridge is a package used in conjunction with console_bridge and rosconsole for connecting console_bridge-based logging to rosconsole-based logging.</description>
 
   <author>Ioan Sucan</author>
