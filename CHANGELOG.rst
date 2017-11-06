@@ -2,6 +2,10 @@
 Changelog for package rosconsole_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix use of deprecated logging functions (`#15 <https://github.com/ros/rosconsole_bridge/issues/15>`_, regression of 0.5.0)
+
 0.5.0 (2017-10-25)
 ------------------
 * replace usage of deprecated logging functions (`#14 <https://github.com/ros/rosconsole_bridge/issues/14>`_)
