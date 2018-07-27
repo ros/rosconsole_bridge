@@ -46,13 +46,13 @@ class OutputHandlerROS : public console_bridge::OutputHandler
 {
 public:
   OutputHandlerROS(void);
-  ~OutputHandlerROS();
   virtual void log(const std::string &text, console_bridge::LogLevel level, const char *filename, int line);
 };
 
 struct RegisterOutputHandlerProxy
 {
   RegisterOutputHandlerProxy(void);
+  ~RegisterOutputHandlerProxy();
 };
 
 }

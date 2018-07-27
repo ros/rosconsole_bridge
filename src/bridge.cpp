@@ -45,10 +45,6 @@ OutputHandlerROS::OutputHandlerROS(void) : OutputHandler()
 {
 }
 
-OutputHandlerROS::~OutputHandlerROS(void) {
-  console_bridge::restorePreviousOutputHandler();
-}
-
 void OutputHandlerROS::log(const std::string &text, console_bridge::LogLevel level, const char *filename, int line)
 {
   std::string prefix;
@@ -128,6 +124,11 @@ RegisterOutputHandlerProxy::RegisterOutputHandlerProxy(void)
 
   // we want the output level to be decided by rosconsole, so we bring all messages to rosconsole
   console_bridge::setLogLevel(console_bridge::CONSOLE_BRIDGE_LOG_DEBUG);
+}
+
+RegisterOutputHandlerProxy::~RegisterOutputHandlerProxy()
+{
+  console_bridge::restorePreviousOutputHandler();
 }
 
 }
