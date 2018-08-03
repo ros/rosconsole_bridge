@@ -2,8 +2,8 @@
 Changelog for package rosconsole_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.5.2 (2018-08-03)
+------------------
 * fix static destruction ordering issue on macOS (`#16 <https://github.com/ros/rosconsole_bridge/issues/16>`_)
 
 0.5.1 (2017-11-05)
