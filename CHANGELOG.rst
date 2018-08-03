@@ -2,6 +2,10 @@
 Changelog for package rosconsole_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix static destruction ordering issue on macOS (`#16 <https://github.com/ros/rosconsole_bridge/issues/16>`_)
+
 0.5.1 (2017-11-05)
 ------------------
 * fix use of deprecated logging functions (`#15 <https://github.com/ros/rosconsole_bridge/issues/15>`_, regression of 0.5.0)
