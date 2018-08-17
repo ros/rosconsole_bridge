@@ -37,8 +37,18 @@
 #ifndef ROSCONSOLE_BRIDGE_
 #define ROSCONSOLE_BRIDGE_
 
+#include <ros/macros.h>
 #include <console_bridge/console.h>
 
+#ifdef ROS_BUILD_SHARED_LIBS // ros is being built around shared libraries
+  #ifdef rosconsole_bridge_EXPORTS // we are building a shared lib/dll
+    #define ROSCONSOLE_BRIDGE_DECL ROS_HELPER_EXPORT
+  #else // we are using shared lib/dll
+    #define ROSCONSOLE_BRIDGE_DECL ROS_HELPER_IMPORT
+  #endif
+#else // ros is being built around static libraries
+  #define ROSCONSOLE_BRIDGE_DECL
+#endif
 namespace rosconsole_bridge
 {
 
@@ -49,7 +59,7 @@ public:
   virtual void log(const std::string &text, console_bridge::LogLevel level, const char *filename, int line);
 };
 
-struct RegisterOutputHandlerProxy
+struct ROSCONSOLE_BRIDGE_DECL RegisterOutputHandlerProxy
 {
   RegisterOutputHandlerProxy(void);
   ~RegisterOutputHandlerProxy();
