@@ -49,6 +49,7 @@
 #else // ros is being built around static libraries
   #define ROSCONSOLE_BRIDGE_DECL
 #endif
+
 namespace rosconsole_bridge
 {
 
