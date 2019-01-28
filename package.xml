@@ -14,6 +14,7 @@
   <url type="repository">https://github.com/ros/rosconsole_bridge</url>
 
   <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>cpp_common</build_depend>
   <build_depend>libconsole-bridge-dev</build_depend>
   <build_depend version_gte="1.11.5">rosconsole</build_depend>
 
