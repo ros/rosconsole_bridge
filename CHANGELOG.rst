@@ -2,6 +2,10 @@
 Changelog for package rosconsole_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Bump CMake version to avoid CMP0048 warning (`#18 <https://github.com/ros/rosconsole_bridge/issues/18>`_)
+
 0.5.3 (2019-03-04)
 ------------------
 * enable Windows build (`#17 <https://github.com/ros/rosconsole_bridge/issues/17>`_)
