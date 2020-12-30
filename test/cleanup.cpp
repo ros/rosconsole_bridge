@@ -7,6 +7,7 @@
   #define CONSOLE_BRIDGE_logWarn logWarn
 #endif
 
+/// @cond IGNORE_THIS
 struct A {
   A(const char* hint) {
     CONSOLE_BRIDGE_logWarn("initializing class: %s", hint);
@@ -15,6 +16,7 @@ struct A {
     CONSOLE_BRIDGE_logWarn("destroying class");
   }
 };
+/// @endcond
 
 // destructor of static instance should use the original output handler
 static A a("static");
