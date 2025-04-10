@@ -2,8 +2,8 @@
 Changelog for package rosconsole_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.5.5 (2025-04-10)
+------------------
 * Update package maintainers. (`#19 <https://github.com/ros/rosconsole_bridge/issues/19>`_)
 * Contributors: Michel Hidalgo
 
